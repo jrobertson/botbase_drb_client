@@ -14,9 +14,8 @@ class BotBaseDRbClient
 
   end
 
-  def received(sender='user01', s, mode: :chat)
-    @bot.received sender, s, mode: mode
+  def received(sender='user01', s, mode: :chat, echo_node: 'node1')
+    @bot.received sender, s, mode: mode, echo_node: echo_node
   end
 
-end 
-
+end
